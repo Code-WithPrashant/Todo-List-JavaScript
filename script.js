@@ -35,13 +35,14 @@ buttonTag.addEventListener("click", function () {
     const editButton = taskBox.querySelector(".edit");
    ///edit button
     editButton.addEventListener("click", function () {
-        if(checkbox.checked){
-            alert("completed task cannot be edited");
-            return;
-        }
+         const taskText = taskBox.querySelector("p");
 
-        const taskText = taskBox.querySelector("p");
+        if (taskText.classList.contains("completed")) {
+        alert("Completed task cannot be edited");
+        return;
+    }
 
+       
         const updatedTask = prompt("Edit Task", taskText.innerText);
 
         if (updatedTask !== null && updatedTask.trim() !== "") {
@@ -69,7 +70,7 @@ buttonTag.addEventListener("click", function () {
 
     taskText.classList.toggle("completed");
 
-    saveTasks();
+    
   });
 
 

@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.todo-box{
+    width:500px;
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.todo-box h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+.input-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.input-box input{
+    flex:1;
+    height:45px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    padding:0 15px;
+    font-size:16px;
+    outline:none;
+}
+
+.input-box input:focus{
+    border-color:#2575fc;
+}
+
+.input-box button{
+    width:90px;
+    border:none;
+    border-radius:8px;
+    background:#2575fc;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.input-box button:hover{
+    background:#0d5ae6;
+}
+
+.task-list{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.task{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    background:#f5f5f5;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.task:hover{
+    background:#ececec;
+}
+
+.task p{
+    font-size:18px;
+    color:#333;
+}
+
+.icons{
+    display:flex;
+    gap:10px;
+}
+
+.icons button{
+    width:38px;
+    height:38px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.edit{
+    background:#ffd54f;
+}
+
+.edit:hover{
+    transform:scale(1.1);
+}
+
+.delete{
+    background:#ff5252;
+    color:white;
+}
+
+.delete:hover{
+    transform:scale(1.1);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888; /* टेक्स्ट का रंग हल्का करने के लिए */
+  opacity: 0.6;
+}
+
+/* चेकबॉक्स और टेक्स्ट को एक लाइन में रखने के लिए */
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}

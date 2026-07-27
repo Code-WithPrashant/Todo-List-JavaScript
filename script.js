@@ -17,7 +17,7 @@ buttonTag.addEventListener("click", function () {
 
 
     taskBox.innerHTML = `
-    <input type="checkbox" class="complete_check">
+    
     <p>${task}</p>
 
         <div class="icons">
@@ -50,16 +50,16 @@ buttonTag.addEventListener("click", function () {
 
     });
   //checkbox 
-    const checkbox=taskBox.querySelector(".complete_check");
-    const taskTest=taskBox.querySelector("p");
+    // const checkbox=taskBox.querySelector(".complete_check");
+    // const taskTest=taskBox.querySelector("p");
 
-    checkbox.addEventListener("change",function(){
-        if(checkbox.checked){
-            taskText.classList.add("completed");
-        }else{
-            taskTest.classList.remove("completed");
-        }
-    });
+    // checkbox.addEventListener("change",function(){
+    //     if(checkbox.checked){
+    //         taskText.classList.add("completed");
+    //     }else{
+    //         taskTest.classList.remove("completed");
+    //     }
+    // });
 
     //complete button
     const completeButton = taskBox.querySelector(".complete");
